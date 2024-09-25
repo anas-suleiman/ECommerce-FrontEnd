@@ -1,0 +1,6 @@
+@NotificationRESTAPI_HostAddress = http://localhost:5149
+
+GET {{NotificationRESTAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

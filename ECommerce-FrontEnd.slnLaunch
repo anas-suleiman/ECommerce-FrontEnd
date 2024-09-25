@@ -1,0 +1,27 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "FrontEnd\\RabbitMQFrontEndClient\\RabbitMQFrontEndClient.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Services\\OrderManagement\\OrderManagementRabbitMQ\\OrderManagementRabbitMQ.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Services\\Inventory\\InventoryRabbitMQ\\InventoryRabbitMQ.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Services\\Notification\\NotificationRabbitMQ\\NotificationRabbitMQ.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Services\\Payment\\PaymentRabbitMQ\\PaymentRabbitMQ.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

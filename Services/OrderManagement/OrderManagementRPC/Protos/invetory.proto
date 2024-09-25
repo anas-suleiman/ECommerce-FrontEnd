@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option csharp_namespace = "InventoryRPCClient";
+
+package inventory;
+
+service Inventory {
+  rpc UpdateInventory (UpdateInventoryRequestModel) returns (InventoryResponse);
+}
+
+message UpdateInventoryRequestModel {
+  string productId = 1;
+  string quantity = 2;
+}
+
+message InventoryResponse {
+  string processingTime = 1;
+}

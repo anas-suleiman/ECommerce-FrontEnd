@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Shared\Shared.csproj" />
+    <ProjectReference Include="..\..\Inventory\InventorySDK\InventorySDK.csproj" />
+    <ProjectReference Include="..\..\Notification\NotificationSDK\NotificationSDK.csproj" />
+    <ProjectReference Include="..\..\Payment\PaymentSDK\PaymentSDK.csproj" />
+  </ItemGroup>
+
+</Project>

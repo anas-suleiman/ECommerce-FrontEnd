@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option csharp_namespace = "NotificationRPC";
+
+package notification;
+
+service Notification {
+  rpc SendNotification (NotificationItem) returns (NotificationReply);
+}
+
+message NotificationItem {
+  string emailaddress = 1;
+  string message = 2;
+}
+
+message NotificationReply {
+  string processingTime = 1;
+}

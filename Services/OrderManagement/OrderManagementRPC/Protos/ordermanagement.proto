@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+option csharp_namespace = "OrderManagementRPC";
+
+package Ordermanagement;
+
+service OrderManagement {
+  rpc PlaceOrder (OrderItem) returns (ServiceResponse);
+}
+
+message OrderItem {
+    string productId = 1;
+    string quantity = 2;
+    string price = 3;
+    string emailaddress =4;
+    string amount = 5;
+    string method = 6;
+}
+
+message ServiceResponse {
+  string processingTime = 1;
+  string latency = 2;
+}
